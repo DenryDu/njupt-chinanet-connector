@@ -16,7 +16,7 @@ def openwifi(device):
             pass
     else:
         try:
-            os.system('gsettings set org.gnome.system.proxy mode auto')
+            os.system("sudo gsettings set org.gnome.system.proxy mode 'auto'")
             os.system('sudo iw dev wlp2s0 connect NJUPT-CHINANET')
         except Exception:
             pass
