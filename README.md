@@ -10,7 +10,6 @@
     ```
         username = '[username]'
         password = '[pwd]'
-        openwifi(device='[linux | windows]')
     ```
 - then save the change
 - then install the required packages
@@ -35,7 +34,6 @@
     ```
         username = '[username]'
         password = '[pwd]'
-        openwifi(device='[linux | windows]')
     ```
 - then save the change
 - then install the required packages
