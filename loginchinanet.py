@@ -6,9 +6,13 @@ import io
 import os
 import sys
 import time
+import netifaces
+import platform
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
  
-def openwifi(device):
+def openwifi():
+    device = platform.system();
     if device=='windows':
         try:
             os.system('netsh wlan connect name=NJUPT-CHINANET')
@@ -16,8 +20,14 @@ def openwifi(device):
             pass
     else:
         try:
-            os.system("sudo gsettings set org.gnome.system.proxy mode 'auto'")
-            os.system('sudo iw dev wlp2s0 connect NJUPT-CHINANET')
+            all_nc = netifaces.interfaces();
+            nc = list(set(all_nc)-set(['lo']));
+            nc = nc[0];
+            os.system("sudo rfkill unblock wifi" )
+            os.system("sudo ifconfig "+ nc +" up" )
+            os.system("sudo gsettings set org.gnome.system.proxy mode auto")
+            os.system("sudo iw dev "+ nc +" connect NJUPT-CHINANET")
+#            os.system("gsettings set org.gnome.system.proxy mode auto")
         except Exception:
             pass
     time.sleep(1)
@@ -80,12 +90,12 @@ def login(username,password):
             print('connect failed')
 
 def main():
+    
     # replace [username] with your username
     username = '[username]'
     # replace [pwd] with your pwd
-    password = '[pwd]'
-    # choose linux or windows
-    openwifi(device='[linux | windows]')
+    password = '[password]'
+    openwifi()
     login(username,password)
     killtask()
     try:
