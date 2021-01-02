@@ -72,6 +72,7 @@ Just **Download** and **Unzip** the repo!
 [@DenryDu](https://github.com/DenryDu)
 ## Contributing
 > 2020/10/10: Just have finished the njupt-chinanet connector for pc(both linux and windows)                      
+
 > 2020/10/11: Fix the problem of cannot set proxy to 'auto' on linux
 ### Contributor
 [@DenryDu](https://github.com/DenryDu)
