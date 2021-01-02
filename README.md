@@ -14,8 +14,11 @@ A tool to automatically connect to NJUPT CHINANET
 - [License](#license)
 
 ## Background
-## Install
+Whenever I open the computer, I always have no choice to wait the wifi be turned on, then to wait the **Captive Portal** to be activated, then I need to enter my username and password in the popup window. Once the Opening Process became more frequent, such operations seem to be tedious. Recently, I've learned the way to use Request package to send post request, so I have a try, using this method to go through portal authentication. It really worked ! Now I have configure the shell to be activated whenever I unlock the screen on my windows pc. So far so good!
+每次打开电脑，都得等待联网，并等待强制认证门户的窗口跳出，然后我输入用户名和密码才能连接校园电信网，如此一来，开关机次数多了，这样的操作就显得繁琐，最近学习了利用request库发送post请求的方法，于是进行了一次尝试，结果很成功，现在我将这个脚本作为win10系统的解锁自启动脚本，每次解锁都自动联网，非常方便
 
+## Install
+Just **Download** and **Unzip** the repo!
 ## Usage
 #### windows
 - download this project
