@@ -1,9 +1,22 @@
 ## NJUPT CHINANET Connector
 ### 南邮电信网自动连接器
-> 2020/10/10: Just have finished the njupt-chinanet connector for pc(both linux and windows)
+![](https://img.shields.io/badge/language-python-green.svg)  ![](https://img.shields.io/badge/NJUPT_CHINANET_Connector-v1.0.1-519dd9.svg)
 
-> 2020/10/11: Fix the problem of cannot set proxy to 'auto' on linux
-### How to use
+A tool to automatically connect to NJUPT CHINANET      
+> 南邮电信wifi自动连接器（可以设置为解锁自启动项）
+## Table of Contents
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Related Efforts](#related-efforts)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Background
+## Install
+
+## Usage
 #### windows
 - download this project
 - open the .py file, and replace the cfg with [] in the code
@@ -51,12 +64,15 @@
         update-rc.d [shell name] defaults 
     ```
 - then restart the pc, you'll see the net is connected automatically.
-
+## Related Efforts
+## Maintainer
+[@DenryDu](https://github.com/DenryDu)
+## Contributing
+> 2020/10/10: Just have finished the njupt-chinanet connector for pc(both linux and windows)                      
+> 2020/10/11: Fix the problem of cannot set proxy to 'auto' on linux
+### Contributor
+[@DenryDu](https://github.com/DenryDu)
+## License
  ***
-If you find this useful, please star it! :)
-
-Support from you is my greatest encouragement! (您的支持是对我的最大鼓励！)       
-Thanks a lot! (谢谢充电！)       
-<img src="https://github.com/DenryDu/DenryDu.github.io/blob/master/image_upload/wechat_charge.png" width="100"  alt="wechat_pay"/>
-<img src="https://github.com/DenryDu/DenryDu.github.io/blob/master/image_upload/alipay_charge.jpg" width="100"  alt="ali_pay"/><br/>
+If you find this useful, please star it, PLEASE! :)
 
